@@ -304,6 +304,11 @@ done
 }
 
 main() { 
+if [[ -d sites/saved ]]; then 
+    echo ""
+else 
+    mkdir sites/saved
+fi 
 end_user_agreement
 banner
 echo -e "\n\n\n"
