@@ -325,6 +325,8 @@ if [[ $EUID == 0 ]]; then
     if [[ "$?" -eq "0" ]]; then 
         echo ""
     else 
+        unzip ngrok.zip > /dev/null 2>&1
+        sleep 3
         cp ngrok /usr/bin 
     fi 
     main
